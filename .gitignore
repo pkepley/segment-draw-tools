@@ -1,3 +1,6 @@
+## Ignore vi tmps
+*.swp
+
 ## Ignore emacs tmps
 [.][#]*
 [#]*[#]
@@ -7,6 +10,7 @@
 *.pyc
 
 ## Ignore these demo image files
-imgs/gwpe3.png  
-imgs/MrNicCage.jpg  
-imgs/NickCage.jpg
+*gwpe2.jpeg
+*gwpe3.png  
+*MrNicCage.jpg  
+*NickCage.jpg
