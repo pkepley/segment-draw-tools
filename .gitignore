@@ -5,3 +5,8 @@
 
 ## Ignore python pyc files
 *.pyc
+
+## Ignore these demo image files
+imgs/gwpe3.png  
+imgs/MrNicCage.jpg  
+imgs/NickCage.jpg
