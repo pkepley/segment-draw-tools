@@ -18,7 +18,6 @@ class ImageSegmenter:
     
     def constructComps(self):
         for i in range(1, self.nx-1):
-            print(i, self.nx, self.ny)
             for j in range(1, self.ny-1):
                 if self.img[i,j] == 1:
                     k = self.__ij_to_k__(i,j)
