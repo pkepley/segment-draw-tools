@@ -1,6 +1,6 @@
 import sys
 import numpy as np
-from scipy.ndimage import imread
+from matplotlib.pyplot import imread
 import matplotlib.pyplot as plt
 from skimage.color import rgb2gray
 from skimage.feature import canny
