@@ -13,7 +13,7 @@ class ImageSegmenter:
         return i * self.ny + j
         
     def __k_to_ij__(self, k):
-        i = k / self.ny
+        i = int(k / self.ny)
         j = k % self.ny
     
     def constructComps(self):
@@ -24,8 +24,8 @@ class ImageSegmenter:
                     nbrs  =  self.img[i-1:i+2, j-1:j+2].flatten()
                     for l in [0,1,2,3,5,6,7,8]:
                         if nbrs[l] == 1:
-                            ii = (i - 1) + (l / 3)
-                            jj = (j - 1) + (l % 3)
+                            ii = int((i - 1) + (l / 3))
+                            jj = int((j - 1) + (l % 3))
                             kk = self.__ij_to_k__(ii,jj)
                             if not self.qu.find(k, kk):
                                 self.qu.unite(k, kk)

@@ -1,6 +1,6 @@
 class QuickUnion:
     def __init__(self, N):
-        self.id = range(N)
+        self.id = list(range(N))
     
     def root(self, i):
         while (i != self.id[i]):
