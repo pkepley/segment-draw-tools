@@ -12,15 +12,15 @@ class RegularImageTriangulator:
 
         if ncol == 0 and nrow == 0:
             self.ncol = 20
-            self.nrow = (self.ny * self.ncol) /  self.nx
+            self.nrow = int((self.ny * self.ncol) /  self.nx)
 
         elif ncol == 0 and nrow != 0:
             self.nrow = nrow
-            self.ncol = (self.nx * self.nrow) /  self.ny
+            self.ncol = int((self.nx * self.nrow) /  self.ny)
 
         elif ncol != 0 and nrow == 0:
             self.ncol = ncol
-            self.nrow = (self.ny * self.ncol) /  self.nx
+            self.nrow = int((self.ny * self.ncol) /  self.nx)
 
         else:
             self.ncol = ncol
